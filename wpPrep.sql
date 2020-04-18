@@ -1,0 +1,4 @@
+CREATE database db_name;
+CREATE USER 'wp'@'172.168.0.0/255.255.0.0' IDENTIFIED BY 'the_password';
+GRANT ALL PRIVILEGES ON db_name.* TO 'wp'@'172.168.0.0/255.255.0.0';
+FLUSH PRIVILEGES;
